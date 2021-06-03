@@ -34,28 +34,43 @@ public class MainActivity extends AppCompatActivity {
         v1.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                String videoURL="https://firebasestorage.googleapis.com/v0/b/jerusalemguid.appspot.com/o/videos%2FBeautiful%20Sunrise%20Video%20with%20birds%20_%20Early%20morning%20time%20Lapse.mp4?alt=media&token=352ec824-7ac9-4d02-9c4c-d8b6d3e7fb70";
+
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("url",videoURL);
                 startActivity(intent);
             }
         });
         v2.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                String videoURL= "https://firebasestorage.googleapis.com/v0/b/jerusalemguid.appspot.com/o/videos%2FA%20short%20natural%20video.mp4?alt=media&token=356745d8-3f3d-484c-8def-38e335cdf331";
+
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("url",videoURL);
+
                 startActivity(intent);
             }
         });
         v3.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity4.class);
+                String videoURL= "https://firebasestorage.googleapis.com/v0/b/jerusalemguid.appspot.com/o/videos%2FNo%20Copyright%20Video%20Stock%20__%20Amazing%20Collection%20of%20%20Nature%20__%20Free%20Nature%20Videos.mp4?alt=media&token=9f534b1a-e438-487a-8a9e-98b5f085b88f";
+
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("url",videoURL);
+
                 startActivity(intent);
             }
         });
         v4.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity5.class);
+                String videoURL= "https://firebasestorage.googleapis.com/v0/b/jerusalemguid.appspot.com/o/videos%2FNature%20Beautiful%20short%20video%20720p%20HD.mp4?alt=media&token=75c1ffe0-c9c1-4683-b4d8-9acb6186508e";
+
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra("url",videoURL);
+
                 startActivity(intent);
             }
         });

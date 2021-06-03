@@ -2,6 +2,7 @@ package com.example.myvideo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -17,7 +18,7 @@ import static android.media.tv.TvTrackInfo.TYPE_AUDIO;
 import static android.media.tv.TvTrackInfo.TYPE_VIDEO;
 
 public class MainActivity2 extends AppCompatActivity {
-    String videoURL="https://firebasestorage.googleapis.com/v0/b/jerusalemguid.appspot.com/o/videos%2FBeautiful%20Sunrise%20Video%20with%20birds%20_%20Early%20morning%20time%20Lapse.mp4?alt=media&token=352ec824-7ac9-4d02-9c4c-d8b6d3e7fb70";
+    String videoURL= null;
     PlayerView playerView;
     SimpleExoPlayer player;
     private  boolean playWhenReady = true;
@@ -30,6 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
      //   int currentVolume = (int) player.getAudioComponent().getVolume();
         playerView = findViewById(R.id.video_view1);
+        videoURL = getIntent().getStringExtra("url");
     }
 
     public void initVideo(){
